@@ -18,6 +18,10 @@ I have used the Clash on my Windows before, so I just **copy** the conf file fro
    ``` bash
    ~/clash/clash-linux-amd64-v1.18.0 -d . -f ~/clash/1702031025979.yml
    ```
+   If you encounter the error of `Permission denied`, you can grant execute permission for the owner (root) using `chmod`:
+    ```bash
+   sudo chmod +x /root/clash/clash-linux-amd64-v1.18.0
+    ```
 2. Open a new terminal (or detaching from tmux's session), and go to your working directory. Run the following code. This only takes effect in the terminal. And if you want to use Clash in another terminal, you should run the following in that terminal again.
    ```bash
    export http_proxy=http://127.0.0.1:7890
